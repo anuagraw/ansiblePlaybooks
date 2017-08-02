@@ -1,0 +1,9 @@
+---
+- hosts: windows
+  tasks:
+   - name: copy
+     fetch: 
+       src: C:\jenkins\workspace\windowsjobv\EmployeeAutomation\target\EmployeeAutomation-0.0.1-SNAPSHOT.jar
+       dest: /jboss-eap-7.0/standalone/deployments/EmployeeAutomation-0.0.1-SNAPSHOT.jar
+       flat: yes
+

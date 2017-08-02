@@ -1,0 +1,6 @@
+---
+- hosts: 127.0.0.1 
+  tasks:
+   - name: runsult
+     shell: nohup /jboss-eap-7.0/bin/standalone.sh -b 0.0.0.0 -bmanagement 0.0.0.0 &
+     become_user: root
